@@ -46,7 +46,7 @@
     }
 
 }
-button {
+.bbb {
     border: 1px solid  $primary-black-color;
     background: $primary-black-color;
     margin-top: 8rem;
@@ -56,7 +56,7 @@ button {
         margin-bottom: 8rem;
     }
 }
-button:hover {
+.bbb:hover {
     border: 1px solid  $primary-black-color;
     background: $white-bg-color;
 }

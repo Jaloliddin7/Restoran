@@ -190,7 +190,7 @@ h1 {
     margin-bottom: 5.4rem;
   }
 }
-.card button {
+.card .intro__button {
   border: 1px solid #111111;
   background: #111111;
   margin-bottom: 8rem;
@@ -830,6 +830,7 @@ h1 {
   .intro__button {
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 9.2rem;
   }
 }
 
@@ -891,20 +892,20 @@ h1 {
   }
 }
 
-button {
+.bbb {
   border: 1px solid #111111;
   background: #111111;
   margin-top: 8rem;
   margin-bottom: 8rem;
 }
 @media (max-width: 768px) {
-  button {
+  .bbb {
     margin-top: 8rem;
     margin-bottom: 8rem;
   }
 }
 
-button:hover {
+.bbb:hover {
   border: 1px solid #111111;
   background: #fff;
 }
