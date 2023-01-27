@@ -1,0 +1,30 @@
+
+%button {
+    padding: 2.4rem 4.8rem;
+    border: 1px solid $white-color;
+    font-weight: 600;
+    font-size: 1.7rem;
+    line-height: 1;
+    letter-spacing: 0.14em;
+    color: $white-color;
+    display: block;
+    text-transform: uppercase;
+}
+%light{
+    background-color: $white-color;
+}
+
+.intro__button{
+    @extend %button;
+    transition: background-color .5s;
+    @include responsive(mobilniy){
+        margin: 0 auto;
+        text-align: center;
+        // margin-bottom: 5.2rem;
+    }
+}
+.intro__button:hover{
+    @extend %button;
+    @extend %light;
+    color: $secondary-color;
+}

@@ -1,0 +1,30 @@
+// -----------------------------------------------------------------------------
+// Basic typography style for copy text
+// -----------------------------------------------------------------------------
+/* jost-regular - latin */
+/* league-spartan-300 - latin */
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: $site-fonts;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: $white-color;
+}
+
+h1, h2, h3{
+    font-weight: 300;
+    color: $white-color;
+}
+h1{
+    font-size: 8rem;
+    line-height: 1;
+    font-size: 80px;
+    letter-spacing: -1px;
+}
+
+

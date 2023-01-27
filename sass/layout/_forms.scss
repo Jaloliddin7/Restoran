@@ -1,0 +1,161 @@
+.forms {
+    background-image: url(../imgs/png/forms.png );
+    background-repeat: no-repeat;
+    background-position: left ;
+    background-size:  auto auto ;
+    margin-bottom: 8.5rem;
+    .forms__list {
+        @include conteiner();
+        padding: 0 4rem;
+        display: flex;
+        gap: 12rem;
+        justify-content: space-between;
+        @include responsive(tablet){
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        @include responsive(medum){
+        padding: 0 2.4rem;
+            
+        }
+    }
+    .forms__item {
+        justify-self: center;
+        position: relative;
+    }
+
+    .forms__img {
+        width: 540px;
+        height: 720px;
+        object-position: center;
+        margin-top:  -8rem; 
+        @include responsive(mobilniy){
+            display: none;
+        }
+    }
+    .forms__img2{
+        width: 573px;
+        height: auto;
+        display: none;
+        @include responsive(mobilniy){
+            display: block;
+            margin: 0 auto;
+            margin-top:  -8rem; 
+            display: flex;
+            justify-self: center;
+            max-width: 100%;
+            height: auto;
+        }
+        @include responsive(medum){
+            display: none;
+        }
+    }
+    .forms__line{
+        margin-bottom: 5.5rem;
+    }
+    .forms__title {
+        width: min(100%,445px);
+        color: $secondary-color;
+        font-weight: 700;
+        font-size: 4.8rem;
+        line-height: 1;
+        letter-spacing: -0.5px;
+        margin-bottom: 2.7rem;
+        @include responsive(medum){
+            font-size: 3.2rem;
+
+        }
+    }
+    .forms__text {
+        color: $secondary-color;
+        width: min(100%,445px);
+        font-size: 2rem;
+        @include responsive(mobilniy){
+            margin-bottom: 11.8rem  ;
+        }
+        @include responsive(medum){
+            font-size: 1.6rem;
+            width: min(100%,327px);
+            margin-bottom: 10.1rem  ;
+
+        }
+    }
+    .forms__li {
+        width: min(100%,445px);
+        padding: 15.5rem 0 0;
+        @include responsive(mobilniy){
+            padding: 4.2rem 0 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        @include responsive(medum){
+            padding: 4.8rem 0 0;
+
+        }
+    }
+    .forms__1{
+        @include responsive(mobilniy){
+            display: none;
+        }
+    }
+    .mob__box{
+        display: none;
+        @include responsive(medum){
+            display: block;
+            margin: 0 auto;
+            margin-top:  -8rem; 
+            width: 100%;
+            height: auto;
+        }
+    }
+
+}
+
+.form2{
+    background-image: url(../imgs/png/form2.png );
+    background-position: bottom right   ;
+    background-size: cover 320px;
+    .form2__bg{
+        max-width: 100%;
+        height: auto;
+        @include responsive(mobilniy){
+            display: none;
+        }
+
+    }
+    .form3__bg{
+        width: 631px;
+        height: 360px;
+        display: none;
+        @include responsive(mobilniy){
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+        @include responsive(medum){
+            display: none;
+        }
+    }
+    .forms__li2{
+        display: none;
+        @include responsive(mobilniy){
+            display: block;
+        }
+    }
+    .form4__bg{
+        width: 100%;
+        height: auto;
+        display: none;
+        @include responsive(medum){
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+}

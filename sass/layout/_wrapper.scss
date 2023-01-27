@@ -1,0 +1,27 @@
+.wrapper{
+    height: min(100%,100vh);
+    padding: 6.5rem 0 19.8rem;
+    background-image: url(../imgs/jpg/header-bg.jpg );
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    .img-nane{
+        max-width: 100%;
+        height: auto;
+        object-position: center;
+        object-fit: cover;
+        display: none;
+
+        @include responsive(mobilniy){
+            display: block;
+            margin-bottom: 1px;
+        }
+    }
+    
+    @include responsive(mobilniy){
+         background-image: none;
+         background-color: $primary-black-color;
+         padding: 0rem 0 19.8rem;
+        
+    }
+}

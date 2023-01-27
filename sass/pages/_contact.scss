@@ -1,0 +1,72 @@
+.forms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size:contain ;
+}
+.new-bg {
+    background-image: url(../imgs/jpg/new-bg.jpg );
+    height: 600px;
+    padding: 6.5rem 15.4rem;
+    @include responsive(mobilniy){
+        background-image: url(../imgs/jpg/new-bg.jpg );
+        background-color: $primary-black-color;
+        padding: 0rem 0 19.8rem;
+        text-align: center;
+       
+   }
+}
+.form__div {
+    width: min(100%,540px);
+    height: 560px;
+    margin: 0 auto;
+    margin-top: -448px;
+    background-color: $white-bg-color;
+    padding: 5rem;
+    transform: translateX(150px);
+    @include responsive(mobilniy){
+        margin-bottom: 1px;
+         margin-top: -208px;
+         transform: none;
+    }
+}
+
+.form__item {
+    padding: 10px;
+}
+.grid__hr {
+}
+.forms__line {
+    position: absolute;
+    bottom: -15%;
+    left: -20%;
+    z-index: -1;
+    @include responsive(mobilniy){
+        display: none;
+    }
+
+}
+button {
+    border: 1px solid  $primary-black-color;
+    background: $primary-black-color;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    @include responsive(mobilniy){
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+    }
+}
+button:hover {
+    border: 1px solid  $primary-black-color;
+    background: $white-bg-color;
+}
+.card__t {
+    font-weight: 600;
+    font-size: 1.7rem;
+    line-height: 1.6;
+    letter-spacing: 0.14em;
+    color: #4C4C4C;
+    opacity: 0.5;
+
+}
+

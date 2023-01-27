@@ -1,0 +1,178 @@
+.card {
+    padding: 0 4rem;
+    margin-bottom: 19rem;
+    .grid__wrapper {
+    @include conteiner();
+    }
+    .card__list {
+        color: $secondary-color;
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+        align-items: center;
+        @include responsive(mobilniy){
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+       }
+    }
+    .card__bg {
+            width: 100%;
+            max-width:540px;
+            height: 600px;
+            flex-shrink: 1fr;
+            background-image: url(../imgs/jpg/footer-img.jpg );
+            background-repeat: no-repeat;
+            background-position: center ;
+            background-size: cover ;
+            position: relative;
+            @include responsive(mobilniy){
+            background-position: top  ;
+            width: 100%;
+            max-width:573px;
+            height: 360px;
+            margin-bottom: 2rem;
+            }
+            @include responsive(medum){
+                background-position: 100% ;
+                width: 100%;
+                max-width:326px;
+                height: 488px;
+                margin-bottom: 2rem;
+           }
+    }
+    .card__line2{
+        width: 95px;
+        height: 1px;
+        position: absolute;
+        top: 74%;
+        left: 100%;
+        @include responsive(mobilniy){
+            display: none;
+       }
+    }
+    .burger {
+        position: absolute;
+        top: -5%;
+        left: -7%;
+        @include responsive(medum){
+            display: none;
+       }
+    }
+    .card__content {
+        width: min(100%,540px);
+    }
+    .card__subtitle {
+        width: min(100%,445px);
+        color: $secondary-black-color;
+        font-weight: 700;
+        font-size: 4.8rem;
+        line-height: 1;
+        letter-spacing: -0.5px;
+        margin-bottom: 2rem;
+        @include responsive(mobilniy){
+            margin: 0 auto;
+       }
+            @include responsive(medum){
+                font-size: 3.2rem;
+
+            }
+    }
+    .card__text1 {
+        color: $secondary-black-color;
+        width: min(100%,445px);
+        font-size: 1.6rem;
+        line-height: 1.6;
+        margin-bottom: 6rem;
+        @include responsive(mobilniy){
+            width: min(100%,327px);
+            margin: 0 auto;
+            margin-bottom: 5.4rem;
+
+        }
+    }
+    button {
+        border: 1px solid  $primary-black-color;
+        background: $primary-black-color;
+        margin-bottom: 8rem;
+    }
+    button:hover {
+        border: 1px solid  $primary-black-color;
+        background: $white-bg-color;
+    }
+    .card__t {
+        font-weight: 600;
+        font-size: 1.7rem;
+        line-height: 1.6;
+        letter-spacing: 0.14em;
+        color: #4C4C4C;
+        opacity: 0.5;
+
+    }
+    .card__t:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+    .card_t1{
+        opacity: 1;
+    }
+    .nav{
+        @include responsive(mobilniy){
+            display: none;
+       }
+    }
+    .nav2{
+        width: min(100%,505px);
+        width: auto;
+        display: flex;
+        gap: 5.7rem;
+        align-items: center;
+        justify-content: space-between;
+        display: none;
+        @include responsive(mobilniy){
+            display: flex;
+       }
+        @include responsive(medum){
+            flex-direction: column;
+            gap: 1.7rem;
+
+       }
+        h3{
+            font-weight: 600;
+            font-size: 1.7rem;
+            line-height: 1.6;
+            letter-spacing: 0.14em;
+            color: #4C4C4C;
+            opacity: 0.5;
+            position: relative;
+        }
+        h3::after{
+            content: "";
+            width: 0px;
+            height: 1px;
+            background-color: #1D1C1E;
+            position: absolute;
+            bottom: 0px;
+            right: 50%;
+            transition: width 0.4s linear;
+        }
+        h3::before{
+            content: "";
+            width: 0px;
+            height: 1px;
+            background-color: #1D1C1E;
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transition: width 0.4s linear;
+        }
+        h3:hover:after,
+        h3:hover::before {
+          width: 20%;
+        }
+        .card_t1{
+            opacity: 1;
+        }
+}      
+}
